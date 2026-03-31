@@ -174,17 +174,34 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     if (t[key] !== undefined) {
-      el.innerHTML = t[key];
+      /* Use innerHTML only when the value contains markup (developer-controlled
+         strings), otherwise use the safer textContent. */
+      if (t[key].includes("<")) {
+        el.innerHTML = t[key];
+      } else {
+        el.textContent = t[key];
+      }
     }
   });
   const toggle = document.getElementById("lang-toggle");
   if (toggle) toggle.textContent = lang === "es" ? "EN" : "ES";
   document.documentElement.lang = lang;
+  try { localStorage.setItem("plr-lang", lang); } catch (_) {}
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const toggle = document.getElementById("lang-toggle");
   if (!toggle) return;
+
+  /* Restore the last language the visitor chose. */
+  try {
+    const saved = localStorage.getItem("plr-lang");
+    if (saved && translations[saved]) {
+      currentLang = saved;
+      applyTranslations(currentLang);
+    }
+  } catch (_) {}
+
   toggle.addEventListener("click", () => {
     currentLang = currentLang === "es" ? "en" : "es";
     applyTranslations(currentLang);
