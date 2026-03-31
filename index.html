@@ -22,13 +22,16 @@
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
-          <li class="nav-item"><a class="nav-link active" href="#home">Inicio</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
-          <li class="nav-item"><a class="nav-link" href="#experience">Experiencia</a></li>
-          <li class="nav-item"><a class="nav-link" href="#specialization">Especialización</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#home" data-i18n="nav.home">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about" data-i18n="nav.about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience" data-i18n="nav.experience">Experiencia</a></li>
+          <li class="nav-item"><a class="nav-link" href="#specialization" data-i18n="nav.specialization">Especialización</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects" data-i18n="nav.projects">Proyectos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education" data-i18n="nav.education">Formación</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact" data-i18n="nav.contact">Contacto</a></li>
+          <li class="nav-item">
+            <button id="lang-toggle" class="btn btn-gh-secondary btn-sm ms-lg-2" aria-label="Switch language">EN</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -40,33 +43,33 @@
       <div class="row align-items-center g-4">
         <div class="col-lg-8">
 
-          <h1>Pau Lorente Ramos<br>Programador especializado en <span style="color: var(--gh-accent);">.NET</span>, <span style="color: var(--gh-purple);">Azure</span> e <span style="color: var(--gh-success);">IA aplicada</span>.</h1>
-          <p class="lead mt-3">
+          <h1 data-i18n="hero.title">Pau Lorente Ramos<br>Programador especializado en <span style="color: var(--gh-accent);">.NET</span>, <span style="color: var(--gh-purple);">Azure</span> e <span style="color: var(--gh-success);">IA aplicada</span>.</h1>
+          <p class="lead mt-3" data-i18n="hero.intro">
             Trabajo como programador desde <strong>2023</strong>, con foco principal en desarrollo sobre <strong>.NET</strong>, especialización en <strong>cloud con Azure</strong> y conocimientos en <strong>Python</strong>. También me interesa profundamente cómo aplicar la inteligencia artificial a los flujos de trabajo reales de un desarrollador.
           </p>
 
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-gh-primary">Contactar</a>
-            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary">Ver GitHub</a>
+            <a href="#contact" class="btn btn-gh-primary" data-i18n="hero.cta.contact">Contactar</a>
+            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary" data-i18n="hero.cta.github">Ver GitHub</a>
           </div>
 
           <div class="row g-3 hero-stats">
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">2023</div>
-                <div class="stat-label">Inicio profesional como programador</div>
+                <div class="stat-label" data-i18n="hero.stat1">Inicio profesional como programador</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">.NET</div>
-                <div class="stat-label">Tecnología principal de especialización</div>
+                <div class="stat-label" data-i18n="hero.stat2">Tecnología principal de especialización</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">Azure</div>
-                <div class="stat-label">Especialización cloud y despliegue</div>
+                <div class="stat-label" data-i18n="hero.stat3">Especialización cloud y despliegue</div>
               </div>
             </div>
           </div>
@@ -119,8 +122,8 @@
             </div>
 
             <!-- Resumen y tags -->
-            <h3 class="mb-2">Resumen profesional</h3>
-            <p class="muted mb-3">
+            <h3 class="mb-2" data-i18n="profile.summary.title">Resumen profesional</h3>
+            <p class="muted mb-3" data-i18n="profile.summary.desc">
               Perfil técnico orientado a producto, desarrollo mantenible y uso práctico de la IA dentro del trabajo diario de programación.
             </p>
 
@@ -154,22 +157,22 @@
   <!-- Sobre mí -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+      <p class="section-text" data-i18n="about.subtitle">
         Soy un programador con experiencia profesional desde 2023, centrado principalmente en el ecosistema .NET y en soluciones cloud con Azure. Me interesa construir software útil, bien estructurado y preparado para evolucionar, sin perder claridad ni mantenibilidad.
       </p>
 
       <div class="row g-4">
         <div class="col-lg-7">
           <div class="gh-card h-100">
-            <h3>Perfil</h3>
-            <p class="mb-3">
+            <h3 data-i18n="about.profile.title">Perfil</h3>
+            <p class="mb-3" data-i18n="about.profile.p1">
               Mi enfoque combina desarrollo práctico, visión técnica y mejora continua. Me interesa especialmente trabajar en soluciones que no solo funcionen bien a nivel de código, sino que también mejoren procesos reales y aporten valor de negocio.
             </p>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="about.profile.p2">
               Además del desarrollo clásico, dedico interés a la inteligencia artificial y al machine learning, especialmente en áreas como <strong>Deep Learning</strong>, <strong>Redes Neuronales Convolucionales (CNN)</strong> y en cómo incorporar IA a los flujos de trabajo de un programador para ganar eficiencia, automatizar tareas y asistir en análisis, desarrollo y mantenimiento.
             </p>
-            <p>
+            <p data-i18n="about.profile.p3">
               Aunque mi especialización actual está en <strong>.NET</strong>, <strong>Azure</strong> y <strong>Python</strong>, también he trabajado en contextos con <strong>PHP</strong> y bases de datos en entornos PHP.
             </p>
           </div>
@@ -177,7 +180,7 @@
 
         <div class="col-lg-5">
           <div class="gh-card h-100">
-            <h3>Foco técnico</h3>
+            <h3 data-i18n="about.focus.title">Foco técnico</h3>
             <div class="tag-list">
               <span class="tag primary">Desarrollo en .NET</span>
               <span class="tag primary">Arquitectura práctica</span>
@@ -200,37 +203,37 @@
   <!-- Experiencia -->
   <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title">Experiencia</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="experience.title">Experiencia</h2>
+      <p class="section-text" data-i18n="experience.subtitle">
         Evolución profesional orientada al desarrollo de software, la especialización técnica en .NET y la adopción de tecnologías cloud e IA.
       </p>
 
       <div class="gh-card">
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-date">2023 - Actualidad</div>
-            <h4>Programador</h4>
-            <p>
+            <div class="timeline-date" data-i18n="experience.job1.date">2023 - Actualidad</div>
+            <h4 data-i18n="experience.job1.title">Programador</h4>
+            <p data-i18n="experience.job1.desc">
               Experiencia profesional continuada como programador desde 2023, con foco principal en desarrollo sobre .NET y soluciones vinculadas a la nube.
             </p>
             <ul>
-              <li>Desarrollo y mantenimiento de aplicaciones con especialización en .NET.</li>
-              <li>Trabajo con servicios, despliegues y soluciones cloud en Azure.</li>
-              <li>Aplicación de buenas prácticas de estructura, mantenimiento y evolución de software.</li>
-              <li>Interés activo en incorporar IA a procesos de desarrollo, productividad y automatización técnica.</li>
+              <li data-i18n="experience.job1.li1">Desarrollo y mantenimiento de aplicaciones con especialización en .NET.</li>
+              <li data-i18n="experience.job1.li2">Trabajo con servicios, despliegues y soluciones cloud en Azure.</li>
+              <li data-i18n="experience.job1.li3">Aplicación de buenas prácticas de estructura, mantenimiento y evolución de software.</li>
+              <li data-i18n="experience.job1.li4">Interés activo en incorporar IA a procesos de desarrollo, productividad y automatización técnica.</li>
             </ul>
           </div>
 
           <div class="timeline-item">
-            <div class="timeline-date">Trayectoria complementaria</div>
-            <h4>Exploración técnica y ampliación de stack</h4>
-            <p>
+            <div class="timeline-date" data-i18n="experience.job2.date">Trayectoria complementaria</div>
+            <h4 data-i18n="experience.job2.title">Exploración técnica y ampliación de stack</h4>
+            <p data-i18n="experience.job2.desc">
               Además de la especialización principal, he trabajado con Python y también he realizado desarrollos y tareas relacionadas con PHP y bases de datos en entornos PHP.
             </p>
             <ul>
-              <li>Uso de Python en automatización, lógica y exploración técnica.</li>
-              <li>Interés en machine learning y experimentación con enfoques de IA.</li>
-              <li>Experiencia complementaria con PHP y bases de datos en proyectos o contextos específicos.</li>
+              <li data-i18n="experience.job2.li1">Uso de Python en automatización, lógica y exploración técnica.</li>
+              <li data-i18n="experience.job2.li2">Interés en machine learning y experimentación con enfoques de IA.</li>
+              <li data-i18n="experience.job2.li3">Experiencia complementaria con PHP y bases de datos en proyectos o contextos específicos.</li>
             </ul>
           </div>
         </div>
@@ -241,8 +244,8 @@
   <!-- Especialización -->
   <section class="section" id="specialization">
     <div class="container">
-      <h2 class="section-title">Especialización</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="spec.title">Especialización</h2>
+      <p class="section-text" data-i18n="spec.subtitle">
         Mi perfil se apoya en tres pilares: desarrollo en .NET, cloud con Azure e investigación práctica sobre IA aplicada al trabajo de un programador.
       </p>
 
@@ -250,7 +253,7 @@
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
             <h3>.NET</h3>
-            <p>
+            <p data-i18n="spec.dotnet">
               Mi especialización principal. Me interesa desarrollar software sólido, bien organizado y preparado para crecer con el tiempo.
             </p>
           </div>
@@ -259,7 +262,7 @@
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
             <h3>Azure</h3>
-            <p>
+            <p data-i18n="spec.azure">
               Especialización en nube con Azure, orientada a despliegue, servicios, escalabilidad y modernización de soluciones.
             </p>
           </div>
@@ -268,7 +271,7 @@
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
             <h3>Python</h3>
-            <p>
+            <p data-i18n="spec.python">
               Conocimientos en Python aplicados a automatización, análisis, experimentación técnica y apoyo a tareas de desarrollo.
             </p>
           </div>
@@ -277,7 +280,7 @@
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
             <h3>Machine Learning</h3>
-            <p>
+            <p data-i18n="spec.ml">
               Interés en construir y entender sistemas que aprendan de datos y puedan integrarse en procesos de software reales.
             </p>
           </div>
@@ -286,7 +289,7 @@
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
             <h3>Deep Learning y CNN</h3>
-            <p>
+            <p data-i18n="spec.dl">
               Interés específico en Deep Learning y Redes Neuronales Convolucionales, tanto desde la parte conceptual como desde la aplicación práctica.
             </p>
           </div>
@@ -294,8 +297,8 @@
 
         <div class="col-md-6 col-xl-4">
           <div class="gh-card h-100">
-            <h3>IA en flujos de trabajo</h3>
-            <p>
+            <h3 data-i18n="spec.ai.title">IA en flujos de trabajo</h3>
+            <p data-i18n="spec.ai.desc">
               Me interesa especialmente cómo aplicar la IA a los flujos de trabajo de un programador: asistencia al desarrollo, automatización, análisis de código y mejora de productividad.
             </p>
           </div>
@@ -307,8 +310,8 @@
   <!-- Proyectos -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title">Líneas de proyecto</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="projects.title">Líneas de proyecto</h2>
+      <p class="section-text" data-i18n="projects.subtitle">
       Algunos de mis proyectos.
       </p>
 
@@ -316,46 +319,46 @@
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>Aplicación empresarial en .NET</h4>
+              <h4 data-i18n="projects.p1.title">Aplicación empresarial en .NET</h4>
               <span class="project-badge">Core</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p1.desc">
               Proyecto orientado a lógica de negocio, mantenibilidad, estructura clara y evolución controlada.
             </p>
             <div class="tag-list mb-3">
               <span class="tag primary">.NET</span>
-              <span class="tag">Arquitectura</span>
+              <span class="tag" data-i18n="tag.architecture">Arquitectura</span>
               <span class="tag">Backend</span>
             </div>
-            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto">Ver código</a>
+            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto" data-i18n="projects.viewcode">Ver código</a>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>Solución cloud con Azure</h4>
+              <h4 data-i18n="projects.p2.title">Solución cloud con Azure</h4>
               <span class="project-badge">Cloud</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p2.desc">
               Proyecto enfocado en despliegue, servicios cloud y construcción de soluciones preparadas para entorno real.
             </p>
             <div class="tag-list mb-3">
               <span class="tag primary">Azure</span>
-              <span class="tag">Servicios</span>
-              <span class="tag">Despliegue</span>
+              <span class="tag" data-i18n="tag.services">Servicios</span>
+              <span class="tag" data-i18n="tag.deployment">Despliegue</span>
             </div>
-            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto">Ver código</a>
+            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto" data-i18n="projects.viewcode">Ver código</a>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>IA aplicada al desarrollo</h4>
+              <h4 data-i18n="projects.p3.title">IA aplicada al desarrollo</h4>
               <span class="project-badge">AI</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p3.desc">
               Experimentación con Python, automatización y aplicación de IA a tareas reales dentro del flujo de trabajo de programación.
             </p>
             <div class="tag-list mb-3">
@@ -363,7 +366,7 @@
               <span class="tag purple">Machine Learning</span>
               <span class="tag purple">Deep Learning</span>
             </div>
-            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto">Ver código</a>
+            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary mt-auto" data-i18n="projects.viewcode">Ver código</a>
           </div>
         </div>
       </div>
@@ -373,30 +376,30 @@
   <!-- Formación -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title">Formación</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="education.title">Formación</h2>
+      <p class="section-text" data-i18n="education.subtitle">
         Base académica orientada al desarrollo y la evolución técnica continua.
       </p>
 
       <div class="row g-4">
         <div class="col-lg-4">
           <div class="gh-card h-100">
-            <h3>Grado en Multimedia</h3>
-            <p>Universitat Oberta de Catalunya (UOC). Formación complementaria en el ámbito digital y multimedia.</p>
+            <h3 data-i18n="education.degree1.title">Grado en Multimedia</h3>
+            <p data-i18n="education.degree1.desc">Universitat Oberta de Catalunya (UOC). Formación complementaria en el ámbito digital y multimedia.</p>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="gh-card h-100">
-            <h3>Ciclo Superior DAM</h3>
-            <p>Prat Educació. Base sólida en desarrollo de aplicaciones y fundamentos de software.</p>
+            <h3 data-i18n="education.degree2.title">Ciclo Superior DAM</h3>
+            <p data-i18n="education.degree2.desc">Prat Educació. Base sólida en desarrollo de aplicaciones y fundamentos de software.</p>
           </div>
         </div>
 
         <div class="col-lg-4">
           <div class="gh-card h-100">
-            <h3>Aprendizaje continuo</h3>
-            <p>Interés permanente en .NET, Azure, Python, IA aplicada, Machine Learning y mejora de procesos de desarrollo.</p>
+            <h3 data-i18n="education.degree3.title">Aprendizaje continuo</h3>
+            <p data-i18n="education.degree3.desc">Interés permanente en .NET, Azure, Python, IA aplicada, Machine Learning y mejora de procesos de desarrollo.</p>
           </div>
         </div>
       </div>
@@ -406,8 +409,8 @@
   <!-- Contacto -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+      <p class="section-text" data-i18n="contact.subtitle">
 Vías de contactar
       </p>
 
@@ -442,7 +445,7 @@ Vías de contactar
 
   <footer>
   <div class="container d-flex justify-content-center">
-    <div>Gracias por visitar</div>
+    <div data-i18n="footer.thanks">Gracias por visitar</div>
   </div>
 </footer>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
