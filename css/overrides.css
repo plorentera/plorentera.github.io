@@ -1,0 +1,53 @@
+/* Override Bootstrap - Secciones y títulos */
+
+html,
+body {
+  background-color: var(--gh-bg) !important;
+  color: var(--gh-text) !important;
+}
+
+.section {
+  padding: 5rem 0 !important;
+  border-bottom: 1px solid var(--gh-border) !important;
+  background: var(--gh-bg) !important;
+}
+
+.section-title {
+  font-size: clamp(1.8rem, 4vw, 2.8rem) !important;
+  font-weight: 800 !important;
+  letter-spacing: -0.03em !important;
+  margin-bottom: 0.75rem !important;
+  color: var(--gh-text) !important;
+}
+
+.section-text {
+  color: var(--gh-muted) !important;
+  max-width: 760px !important;
+  margin-bottom: 2rem !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--gh-text) !important;
+}
+
+p {
+  color: var(--gh-text) !important;
+}
+
+.container {
+  background-color: transparent !important;
+}
+
+/* Forzar que todas las secciones tengan fondo oscuro */
+section.section {
+  background-color: var(--gh-bg) !important;
+}
+
+header.hero {
+  background-color: var(--gh-bg) !important;
+}
+
+footer {
+  background-color: var(--gh-bg) !important;
+  color: var(--gh-muted) !important;
+}
