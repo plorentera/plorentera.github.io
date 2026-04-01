@@ -29,6 +29,9 @@
           <li class="nav-item"><a class="nav-link" href="#projects">Proyectos</a></li>
           <li class="nav-item"><a class="nav-link" href="#education">Formación</a></li>
           <li class="nav-item"><a class="nav-link" href="#contact">Contacto</a></li>
+          <li class="nav-item d-flex align-items-center">
+            <button id="lang-toggle" class="btn btn-gh-secondary btn-sm ms-lg-2 mt-2 mt-lg-0" aria-label="Switch language">EN</button>
+          </li>
         </ul>
       </div>
     </div>
@@ -40,33 +43,33 @@
       <div class="row align-items-center g-4">
         <div class="col-lg-8">
 
-          <h1>Pau Lorente Ramos<br>Programador enfocado en desarrollo de software y soluciones digitales.</h1>
-          <p class="lead mt-3">
+          <h1 data-i18n="hero.title">Pau Lorente Ramos<br>Programador enfocado en desarrollo de software y soluciones digitales.</h1>
+          <p class="lead mt-3" data-i18n="hero.intro">
             Trabajo como programador desde <strong>2023</strong>, participando en el desarrollo de aplicaciones y soluciones orientadas a mejorar procesos y aportar valor real. Me interesa especialmente la evolución del software y la integración de nuevas tecnologías en entornos profesionales.
           </p>
 
           <div class="hero-actions">
-            <a href="#contact" class="btn btn-gh-primary">Contactar</a>
-            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary">Ver GitHub</a>
+            <a href="#contact" class="btn btn-gh-primary" data-i18n="hero.cta.contact">Contactar</a>        
+            <a href="https://github.com/plorentera" target="_blank" rel="noopener noreferrer" class="btn btn-gh-secondary" data-i18n="hero.cta.github">Ver GitHub</a>
           </div>
 
           <div class="row g-3 hero-stats">
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">2023</div>
-                <div class="stat-label">Inicio profesional como programador</div>
+                <div class="stat-label" data-i18n="hero.stat1">Inicio profesional como programador</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">Software</div>
-                <div class="stat-label">Desarrollo de aplicaciones y soluciones digitales</div>
+                <div class="stat-label" data-i18n="hero.stat2">Desarrollo de aplicaciones y soluciones digitales</div>
               </div>
             </div>
             <div class="col-md-4">
               <div class="stat-card">
                 <div class="stat-number">Innovación</div>
-                <div class="stat-label">Interés en nuevas tecnologías y mejora continua</div>
+                <div class="stat-label" data-i18n="hero.stat3">Interés en nuevas tecnologías y mejora continua</div>
               </div>
             </div>
           </div>
@@ -154,15 +157,15 @@
   <!-- Sobre mí -->
   <section class="section" id="about">
     <div class="container">
-      <h2 class="section-title">Sobre mí</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="about.title">Sobre mí</h2>
+      <p class="section-text" data-i18n="about.subtitle">
         Soy programador con experiencia profesional desde 2023, centrado en el ecosistema .NET, trabajando en el desarrollo de aplicaciones y su integración con servicios en la nube, especialmente en entornos Azure.      
       </p>
 
       <div class="row g-4">
         <div class="col-lg-7">
           <div class="gh-card h-100">
-            <h3>Perfil</h3>
+            <h3 data-i18n="about.profile.title">Perfil</h3>
 
             <p class="mb-3">
               He trabajado con bases de datos en Azure, incluyendo Cosmos DB y SQL Server.
@@ -196,7 +199,7 @@
 
         <div class="col-lg-5">
           <div class="gh-card h-100">
-            <h3>Foco técnico</h3>
+            <h3 data-i18n="about.focus.title">Foco técnico</h3>
             <div class="tag-list">
               <span class="tag primary">.NET</span>
               <span class="tag primary">MAUI</span>
@@ -225,16 +228,16 @@
   <!-- Experiencia -->
   <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-title">Experiencia</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="experience.title">Experiencia</h2>
+      <p class="section-text" data-i18n="experience.subtitle">
         Experiencia profesional desde 2023 centrada en desarrollo con .NET, integración con Azure, trabajo con datos y desarrollo de soluciones backend e inteligencia artificial.
       </p>
 
       <div class="gh-card">
         <div class="timeline">
           <div class="timeline-item">
-            <div class="timeline-date">2023 - Actualidad</div>
-            <h4>Programador</h4>
+            <div class="timeline-date" data-i18n="experience.job1.date">2023 - Actualidad</div>
+            <h4 data-i18n="experience.job1.title">Programador</h4>
             <p>
               Trabajo principalmente en el ecosistema .NET y en la integración de aplicaciones con servicios en la nube en Azure, abarcando desarrollo, despliegue, almacenamiento y backend.
             </p>
@@ -258,8 +261,8 @@
   <!-- Especialización -->
   <section class="section" id="specialization">
     <div class="container">
-      <h2 class="section-title">Especialización</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="spec.title">Especialización</h2>
+      <p class="section-text" data-i18n="spec.subtitle">
         Mi trabajo se centra en el ecosistema .NET y en la integración de aplicaciones con servicios en la nube en Azure, abarcando desde el desarrollo hasta el despliegue y gestión de datos.
       </p>
 
@@ -324,8 +327,8 @@
   <!-- Proyectos -->
   <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-title">Líneas de proyecto</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="projects.title">Líneas de proyecto</h2>
+      <p class="section-text" data-i18n="projects.subtitle">
       Algunos de mis proyectos.
       </p>
 
@@ -333,10 +336,10 @@
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>Aplicación empresarial en .NET</h4>
+              <h4 data-i18n="projects.p1.title">Aplicación empresarial en .NET</h4>
               <span class="project-badge">Core</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p1.desc">
               Proyecto orientado a lógica de negocio, mantenibilidad, estructura clara y evolución controlada.
             </p>
             <div class="tag-list mb-3">
@@ -351,10 +354,10 @@
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>Solución cloud con Azure</h4>
+              <h4 data-i18n="projects.p2.title">Solución cloud con Azure</h4>
               <span class="project-badge">Cloud</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p2.desc">
               Proyecto enfocado en despliegue, servicios cloud y construcción de soluciones preparadas para entorno real.
             </p>
             <div class="tag-list mb-3">
@@ -369,10 +372,10 @@
         <div class="col-lg-4">
           <div class="gh-card project-card h-100">
             <div class="project-top">
-              <h4>IA aplicada al desarrollo</h4>
+              <h4 data-i18n="projects.p3.title">IA aplicada al desarrollo</h4>
               <span class="project-badge">AI</span>
             </div>
-            <p class="mb-3">
+            <p class="mb-3" data-i18n="projects.p3.desc">
               Experimentación con Python, automatización y aplicación de IA a tareas reales dentro del flujo de trabajo de programación.
             </p>
             <div class="tag-list mb-3">
@@ -390,8 +393,8 @@
   <!-- Formación -->
   <section class="section" id="education">
     <div class="container">
-      <h2 class="section-title">Formación</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="education.title">Formación</h2>
+      <p class="section-text" data-i18n="education.subtitle">
         Base académica orientada al desarrollo y la evolución técnica continua.
       </p>
 
@@ -430,8 +433,8 @@
   <!-- Contacto -->
   <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-title">Contacto</h2>
-      <p class="section-text">
+      <h2 class="section-title" data-i18n="contact.title">Contacto</h2>
+      <p class="section-text" data-i18n="contact.subtitle">
           Vías de contactar
       </p>
 
@@ -459,7 +462,7 @@
 
   <footer>
   <div class="container d-flex justify-content-center">
-    <div>Gracias por visitar</div>
+    <div data-i18n="footer.thanks">Gracias por visitar</div>
   </div>
 </footer>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
